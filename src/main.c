@@ -50,7 +50,7 @@ void handle_conn(bool connected) {
     //APP_LOG( APP_LOG_LEVEL_ERROR , "connected toggle");
 	if (connected) {
     #ifdef PBL_COLOR
-       text_layer_set_background_color(tl_conn_layer, GColorDukeBlue);
+       text_layer_set_background_color(tl_conn_layer, GColorKellyGreen);
     #else 
        text_layer_set_background_color(tl_conn_layer, GColorBlack);
     #endif
@@ -61,7 +61,7 @@ void handle_conn(bool connected) {
 	} else {
        #ifdef PBL_COLOR
           //text_layer_set_background_color(tl_conn_layer, GColorBlack);
-          text_layer_set_background_color(tl_conn_layer, GColorDukeBlue);
+          text_layer_set_background_color(tl_conn_layer, GColorKellyGreen);
           text_layer_set_text_color(tl_conn_layer, GColorRed);
        #else
           text_layer_set_background_color(tl_conn_layer, GColorWhite);
@@ -206,7 +206,7 @@ void handle_init(void) {
 	GRect frame = layer_get_frame(root_layer);
 	
   #ifdef PBL_COLOR
-    window_set_background_color(my_window, GColorDukeBlue);
+    window_set_background_color(my_window, GColorKellyGreen);
   #else
     window_set_background_color(my_window, GColorBlack);
   #endif
@@ -215,7 +215,7 @@ void handle_init(void) {
 	text_layer_set_font(tl_cycle, font_m);	
 	text_layer_set_text_alignment(tl_cycle, GTextAlignmentLeft);
   #ifdef PBL_COLOR
-    text_layer_set_background_color(tl_cycle, GColorDukeBlue);
+    text_layer_set_background_color(tl_cycle, GColorKellyGreen);
     text_layer_set_text_color(tl_cycle, GColorWhite);
   #else
     text_layer_set_background_color(tl_cycle, GColorBlack);
@@ -226,7 +226,7 @@ void handle_init(void) {
 	text_layer_set_font(tl_cp, font_m);
 	text_layer_set_text_alignment(tl_cp, GTextAlignmentRight);
 	#ifdef PBL_COLOR
-    text_layer_set_background_color(tl_cp, GColorDukeBlue);
+    text_layer_set_background_color(tl_cp, GColorKellyGreen);
     text_layer_set_text_color(tl_cp, GColorWhite);
   #else
     text_layer_set_background_color(tl_cp, GColorBlack);
@@ -238,7 +238,7 @@ void handle_init(void) {
 	text_layer_set_font(tl_countdown, font_b);
 	text_layer_set_text_alignment(tl_countdown, GTextAlignmentCenter);
 	#ifdef PBL_COLOR
-    text_layer_set_background_color(tl_countdown, GColorDukeBlue);
+    text_layer_set_background_color(tl_countdown, GColorKellyGreen);
     text_layer_set_text_color(tl_countdown, GColorWhite);
   #else
     text_layer_set_background_color(tl_countdown, GColorBlack);
@@ -249,7 +249,7 @@ void handle_init(void) {
 	text_layer_set_font(tl_list, font_s);
 	text_layer_set_text_alignment(tl_list, GTextAlignmentCenter);
 	#ifdef PBL_COLOR
-    text_layer_set_background_color(tl_list, GColorDukeBlue);
+    text_layer_set_background_color(tl_list, GColorKellyGreen);
     text_layer_set_text_color(tl_list, GColorWhite);
   #else
     text_layer_set_background_color(tl_list, GColorBlack);
@@ -257,13 +257,13 @@ void handle_init(void) {
 	#endif
 	
 	
-	img_res = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_RES); //48x67
+	img_res = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_ENL); //48x67
 	bl_res = bitmap_layer_create(GRect(0, 60, 50, 70));
   bitmap_layer_set_bitmap(bl_res, img_res);
 	bitmap_layer_set_alignment(bl_res, GAlignLeft); 
 
 #ifdef PBL_COLOR
-  bitmap_layer_set_background_color(bl_res, GColorDukeBlue);
+  bitmap_layer_set_background_color(bl_res, GColorKellyGreen);
 #else
   bitmap_layer_set_background_color(bl_res, GColorBlack);
 #endif
@@ -272,7 +272,7 @@ void handle_init(void) {
 	text_layer_set_font(tl_realtime, font_s);
 	text_layer_set_text_alignment(tl_realtime, GTextAlignmentRight);
 	#ifdef PBL_COLOR
-    text_layer_set_background_color(tl_realtime, GColorDukeBlue);
+    text_layer_set_background_color(tl_realtime, GColorKellyGreen);
     text_layer_set_text_color(tl_realtime, GColorWhite);
   #else
     text_layer_set_background_color(tl_realtime, GColorBlack);
@@ -283,7 +283,7 @@ void handle_init(void) {
   text_layer_set_font(tl_conn_layer, font_s);
 	text_layer_set_text_alignment(tl_conn_layer, GTextAlignmentRight);
 	#ifdef PBL_COLOR
-    text_layer_set_background_color(tl_conn_layer, GColorDukeBlue);
+    text_layer_set_background_color(tl_conn_layer, GColorKellyGreen);
     text_layer_set_text_color(tl_conn_layer, GColorWhite);
   #else
     text_layer_set_background_color(tl_conn_layer, GColorBlack);
@@ -295,7 +295,7 @@ void handle_init(void) {
   text_layer_set_font(tl_batt_layer, font_s);
 	text_layer_set_text_alignment(tl_batt_layer, GTextAlignmentRight);
 	#ifdef PBL_COLOR
-    text_layer_set_background_color(tl_batt_layer, GColorDukeBlue);
+    text_layer_set_background_color(tl_batt_layer, GColorKellyGreen);
     text_layer_set_text_color(tl_batt_layer, GColorWhite);
   #else
     text_layer_set_background_color(tl_batt_layer, GColorBlack);
@@ -307,7 +307,7 @@ void handle_init(void) {
  	text_layer_set_font(tl_region_layer, font_s);
 	text_layer_set_text_alignment(tl_region_layer, GTextAlignmentRight);
 	#ifdef PBL_COLOR
-    text_layer_set_background_color(tl_region_layer, GColorDukeBlue);
+    text_layer_set_background_color(tl_region_layer, GColorKellyGreen);
     text_layer_set_text_color(tl_region_layer, GColorWhite);
   #else
     text_layer_set_background_color(tl_region_layer, GColorBlack);

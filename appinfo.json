@@ -3,31 +3,31 @@
     "capabilities": [
         "location"
     ],
-    "companyName": "@noweb4u/@brinky",
-    "longName": "Ingress Resistance Cycle Time",
+    "companyName": "@noweb4u",
+    "longName": "Ingress Enlightened Cycle Time",
     "projectType": "native",
     "resources": {
         "media": [
             {
-                "file": "images/res-bw.png",
-                "name": "IMAGE_RES",
+                "file": "images/enl-bw.png",
+                "name": "IMAGE_ENL",
                 "type": "png"
             },
             {
-                "file": "images/res_logo.png",
+                "file": "images/enl_logo.png",
                 "menuIcon": true,
-                "name": "IMAGE_RES_LOGO",
+                "name": "IMAGE_ENL_LOGO",
                 "type": "png"
             }
         ]
     },
     "sdkVersion": "3",
-    "shortName": "Resistance Cycle Time",
+    "shortName": "Enlightened Cycle Time",
     "targetPlatforms": [
         "aplite",
         "basalt"
     ],
-    "uuid": "daeb9c98-fb68-456a-8ab9-50153774fa6f",
+    "uuid": "53fa4e86-113c-43c9-a9ba-42f7664250ff",
     "versionCode": 4,
     "versionLabel": "1.6",
     "watchapp": {
